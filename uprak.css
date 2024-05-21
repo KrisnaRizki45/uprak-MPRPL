@@ -1,0 +1,103 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+  .header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .form-group label {
+    flex: 1;
+    margin-right: 10px;
+  }
+  .form-group input, .form-group select {
+    flex: 2;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  .form-group.date {
+    grid-column: 1 / -1;
+    width: 395px;
+  }
+  .items-table {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  .items-table th, .items-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  .items-table th {
+    background-color: #f9f9f9;
+  }
+  .total {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .total div {
+    margin-left: 20px;
+  }
+  .total input {
+    width: 100px;
+    padding: 5px;
+  }
+  .submit-button {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .submit-button button {
+    background-color: #00008B;
+    color: white;
+    padding: 10px 150px;
+    margin-right: 235px;
+    border: none;
+    border-radius: 5px;
+  }
+  img{
+      width: 50px;
+      height: auto; 
+  }
+  .form-group input,
+  .form-group select {
+      background-color: #f2f2f2;
+      border-radius: 5px;
+  }
+  .total {
+      grid-column: 1 / -1;
+      margin-top: 20px;
+  }
+  .total div label {
+      display: block; 
+  }
+  #add {
+      background-color: #FF8C00; 
+      color: white; 
+      padding: 7px 50px;
+      margin-left: 5px; 
+      border: none; 
+      border-radius: 5px; 
+      cursor: pointer; 
+  }
